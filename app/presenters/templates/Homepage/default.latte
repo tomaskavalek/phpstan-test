@@ -1,0 +1,19 @@
+{block content}
+	<div id="banner">
+		<h1 n:block=title>Congratulations!</h1>
+	</div>
+
+	{snippet flashes}
+		<div n:foreach="$flashes as $flash" n:class="alert, 'alert-' . $flash->type">{$flash->message}</div>
+	{/snippet}
+
+{/block}
+
+{block scripts}
+	{include parent}
+{/block}
+
+
+{block head}
+
+{/block}

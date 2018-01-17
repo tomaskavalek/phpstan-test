@@ -1,0 +1,9 @@
+includes:
+	- vendor/phpstan/phpstan-nette/extension.neon
+	- vendor/phpstan/phpstan/conf/config.level4.neon
+
+parameters:
+	autoload_files:
+		- %rootDir%/../../../app/bootstrap.php
+	autoload_directories:
+		- %rootDir%/../../../app
